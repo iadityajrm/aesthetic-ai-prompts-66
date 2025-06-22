@@ -125,18 +125,18 @@ const CartPage = () => {
                 <h2 className="text-2xl serif font-bold text-charcoal mb-6">Billing Information</h2>
                 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <Input name="name" placeholder="Full Name" value={billingInfo.name} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
-                  <Input name="email" type="email" placeholder="Email Address" value={billingInfo.email} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
+                  <Input name="name" placeholder="Full Name" value={billingInfo.name} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-zinc-50" />
+                  <Input name="email" type="email" placeholder="Email Address" value={billingInfo.email} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
                 </div>
 
-                <Input name="phone" placeholder="Phone Number" value={billingInfo.phone} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
+                <Input name="phone" placeholder="Phone Number" value={billingInfo.phone} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
 
-                <Input name="address" placeholder="Address" value={billingInfo.address} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
+                <Input name="address" placeholder="Address" value={billingInfo.address} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
 
                 <div className="grid md:grid-cols-3 gap-4">
-                  <Input name="city" placeholder="City" value={billingInfo.city} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
-                  <Input name="state" placeholder="State" value={billingInfo.state} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
-                  <Input name="pincode" placeholder="Pincode" value={billingInfo.pincode} onChange={handleInputChange} className="placeholder:text-ash/60 text-charcoal" required />
+                  <Input name="city" placeholder="City" value={billingInfo.city} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
+                  <Input name="state" placeholder="State" value={billingInfo.state} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
+                  <Input name="pincode" placeholder="Pincode" value={billingInfo.pincode} onChange={handleInputChange} required className="placeholder:text-ash/60 text-charcoal bg-gray-50" />
                 </div>
 
                 <div className="bg-blush/30 p-4 rounded-lg">
@@ -147,7 +147,7 @@ const CartPage = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <Button type="button" variant="outline" onClick={() => setShowCheckout(false)} className="flex-1">
+                  <Button type="button" variant="outline" onClick={() => setShowCheckout(false)} className="flex-1 text-zinc-700 bg-yellow-600 hover:bg-yellow-500">
                     Back to Cart
                   </Button>
                   <Button type="submit" className="flex-1 bg-charcoal hover:bg-ash text-linen">
